@@ -100,3 +100,16 @@ console.log(empireStateBuilding.height);
 
 const stories = empireStateBuilding["stories"];
 console.log(stories);
+
+
+// more meat goes here later
+
+
+// Your task is to use your knowledge of accessing property values and array indices to output 
+// the commit message for the push event with an id of 8030403992.
+
+
+function checkId(data) {
+  return data.id == "8030403992";
+}
+const myData = githubData.find(checkId);
