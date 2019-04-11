@@ -23,7 +23,7 @@ cupcake.color.forEach(color => {
   console.log(`this whole thing is a template string ${color}`);
 })
 
-
+//////////////////////////////////////////////////
 
 // 1. make an object to represent a red 2015 Ford Mustang 
 // and console log it
@@ -74,9 +74,7 @@ const familyMembers = [
 
 console.log(familyMembers);
 
-
-
-// LIGHTNING EXERCISES
+//////////////////////////////////////////////////
 
 const empireStateBuilding = {
   stories: 103,
@@ -101,6 +99,7 @@ console.log(empireStateBuilding.height);
 const stories = empireStateBuilding["stories"];
 console.log(stories);
 
+//////////////////////////////////////////////////
 
 const nashvilleSoftwareSchool = {
   founded: 2012,
@@ -127,9 +126,48 @@ for (let i = 0; i < nashvilleSoftwareSchool.instructors.fullTime.length; i++) {
 console.log(nashvilleSoftwareSchool.instructors.fullTime[4]);
 console.log(nashvilleSoftwareSchool.instructors.partTime[0]);
 
+//////////////////////////////////////////////////
+
+const beatles = {
+  albums: ["Abbey Road", "Sgt Peppers Lonely Heart's Club Band", "Revolver", "Magical Mystery Tour", "Something New"],
+  history: {
+      formed: 1960,
+      disbanded: 1970
+  },
+  members: [
+      {
+          name: "George Harrison",
+          birth: 1943,
+          death: 2001
+      },
+      {
+          name: "Paul McCartney",
+          birth: 1942,
+          death: null
+      },
+      {
+          name: "John Lennon",
+          birth: 1940,
+          death: 1980
+      },
+      {
+          name: "Ringo Starr",
+          birth: 1940,
+          death: null
+      }
+  ]
+}
+
+// Given the above object, output the following value to the console.
+// Paul McCartney was in the Beatles from 1960 to 1970. He was born in 1942. 
+// He contributed heavily to the Magical Mystery Tour Album.
+
+console.log(beatles.members[1].name + " was in the Beatles from 1960 to 1970. He was born in " + beatles.members[1].birth + ". He contributed heavily to the " + beatles.albums[3] + " album.");
+
+//////////////////////////////////////////////////
+
 // Your task is to use your knowledge of accessing property values and array indices to output 
 // the commit message for the push event with an id of 8030403992.
-
 
 function checkId(data) {
   return data.id == "8030403992";
