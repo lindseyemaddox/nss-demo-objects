@@ -102,8 +102,30 @@ const stories = empireStateBuilding["stories"];
 console.log(stories);
 
 
-// more meat goes here later
+const nashvilleSoftwareSchool = {
+  founded: 2012,
+  director: "John Wark",
+  instructors: {
+      fullTime: ["Jisie", "Brenda", "Steve", "Joe", "Andy"],
+      partTime: ["Zoe", "Nathan"]
+  },
+  address: "500 Interstate Blvd. S"
+}
 
+// 1: Output the names of the part-time instructors 
+// followed by the names of the full-time instructors in the console.
+
+for (let i = 0; i < nashvilleSoftwareSchool.instructors.partTime.length; i++) {
+  console.log(nashvilleSoftwareSchool.instructors.partTime[i])
+}
+for (let i = 0; i < nashvilleSoftwareSchool.instructors.fullTime.length; i++) {
+  console.log(nashvilleSoftwareSchool.instructors.fullTime[i])
+}
+
+// 2: Output only Andy and Zoe in the console.
+
+console.log(nashvilleSoftwareSchool.instructors.fullTime[4]);
+console.log(nashvilleSoftwareSchool.instructors.partTime[0]);
 
 // Your task is to use your knowledge of accessing property values and array indices to output 
 // the commit message for the push event with an id of 8030403992.
